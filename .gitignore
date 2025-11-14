@@ -416,3 +416,15 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+Part*/*
+
+# EXCEPTO los archivos de ejercicios
+!Part*/Exercise*
+!Part*/exercise*
+
+# Si tienes carpetas de ejercicios también
+!Part*/Exercise*/
+!Part*/Exercise*/**
+!Part*/exercise*/
+!Part*/exercise*/**
