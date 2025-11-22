@@ -19,7 +19,13 @@ const App = () => {
   const [selected, setSelected] = useState(0)
 
   const handleAnecdote = () => {
-    setSelected((selected + 1) % anecdotes.length)
+    let random
+    
+    do {
+      random = Math.floor(Math.random() * anecdotes.length)
+    } while(random === selected)
+    
+    setSelected(random)
   }
 
   return (
